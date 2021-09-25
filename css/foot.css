@@ -8,7 +8,7 @@
     padding: 0.5rem;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(300px,auto));
-    grid-auto-rows: minmax(40vh,auto);
+    grid-auto-rows: minmax(15vh,auto);
     grid-column-gap: 10px;
     grid-row-gap: 5px;
 
@@ -33,4 +33,8 @@
 .footer div div.details div::first-letter
 {
     font-size: 1.3rem;
+}
+.footer div div.details div
+{
+    padding-left: 2px;
 }
