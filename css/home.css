@@ -1,0 +1,88 @@
+@import url(./nav.css);
+@import url(./foot.css);
+
+.gallery
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 3px;
+}
+.slogan h1
+{
+    font-weight: bolder;
+}
+.slogan p
+{
+    font-weight:bold;
+    letter-spacing: 0.05rem;
+}
+.grid
+{
+    margin: 0px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(280px,auto));
+    grid-auto-rows: minmax(150px,auto);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.grid div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid div a 
+{
+    overflow: hidden;
+}
+.grid div a img
+{
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-play-state: paused;
+}
+.grid div a:hover img
+{
+    animation-play-state: running;
+}
+.grid div a img
+{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+    border-radius: 10px;
+}
+.grid div .text-wrapper
+{
+    color: white;
+    position: absolute;
+    font-weight: bold;
+}
+@keyframes fade {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+footer
+{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.959);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem 0rem;
+}
