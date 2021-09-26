@@ -1,0 +1,94 @@
+@import url(./nav.css);
+@import url(./foot.css);
+
+body
+{
+    --courses-bgcolor:white;
+    --courses-fontcolor:black;
+    --branch-container-bgcolor:aliceblue;
+    --red-fontcolor:red;
+    --intake-color:rgba(128, 128, 128, 0.76);
+}
+body.dark
+{
+    --courses-bgcolor:#20232a;
+    --branch-container-bgcolor:rgba(128, 128, 128, 0.76);
+    --branch-container-fontcolor:white;
+    --courses-fontcolor:white;
+    --red-fontcolor:rgb(255, 217, 0);
+    --intake-color:whitesmoke;
+
+}
+.title
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,rgba(246, 35, 7, 0.637),red);
+    padding: 1.2rem;
+}
+.about-courses
+{
+    background-color: var(--courses-bgcolor);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(100px,auto);
+    grid-gap: 8px;
+    padding: 5rem 2rem 5rem 1rem;
+    margin-top: 2rem;
+}
+.branch-container
+{
+    background: var(--branch-container-bgcolor);
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+.branch-container .branch
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.branch-container  img
+{
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+.branch-container .branch
+{
+    padding: 0.15rem 0rem 0rem 0.2rem;
+}
+.branch-container .branch span:nth-child(1)
+{
+    font-size: 1.2rem;
+    font-weight:600;
+}
+.branch-container .branch div span
+{
+    font-size: 1.13rem;
+}
+.branch-container .branch .red
+{
+    color: var(--red-fontcolor);
+}
+.intake
+{
+    color: var(--intake-color);
+}
+@media (max-width:1200px) {
+    .about-courses
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:880px) {
+    .about-courses 
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}

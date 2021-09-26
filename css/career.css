@@ -1,0 +1,62 @@
+@import url(./nav.css);
+@import url(./foot.css);
+
+body
+{
+    --bgcolor:white;
+    --fontcolor:black;
+}
+body.dark
+{
+    --bgcolor:#20232a;
+    --fontcolor:white;
+}
+.title
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,rgba(246, 35, 7, 0.637),red);
+    padding: 1.2rem;
+}
+
+.main-section
+{
+    background: var(--bgcolor);
+    color: var(--fontcolor);
+}
+.container span
+{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.quality-container
+{
+    width: 100%;
+    margin: 1rem 0rem;
+}
+table
+{
+    border: 1px solid rgb(129, 126, 126);
+}
+table tr
+{
+    padding: 0.2rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: 1px solid black;
+}
+table tr td
+{
+    font-size: 1.15rem;
+    margin: 0.1rem 1rem;
+}
+.apply
+{
+    text-align: center;
+    margin: 1rem 0.5rem;
+}
+    

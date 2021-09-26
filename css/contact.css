@@ -1,0 +1,54 @@
+@import url(./nav.css);
+@import url(./foot.css);
+
+body
+{
+    --contact-bgcolor:aliceblue;
+    --contact-fontcolor:black;
+}
+body.dark
+{
+    --contact-bgcolor:#20232a;
+    --contact-fontcolor:white;
+}
+.title
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,rgba(246, 35, 7, 0.637),red);
+    padding: 1.2rem;
+}
+.contacts
+{
+    color: var(--contact-fontcolor);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.contacts .contact-info
+{
+    background: var(--contact-bgcolor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem 0.2rem;
+    border-radius: 10px;
+}
+.contacts .contact-info .header
+{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 650;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+.contacts .contact-info div a
+{
+    text-decoration: none;
+    color: var(--contact-fontcolor);
+}

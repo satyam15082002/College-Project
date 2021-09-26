@@ -1,0 +1,80 @@
+@import url(./nav.css);
+@import url(./foot.css);
+
+body
+{
+    --about-section-bgcolor:linear-gradient(to right,white,rgba(0, 255, 149, 0.363));
+    --about-section-fontcolor:black;
+    --about-section-header-fontcolor:black;
+    --about-section-header-span-fontcolor:red;
+}
+body.dark
+{
+    --about-section-bgcolor:#2b2f38;
+    --about-section-fontcolor:white;
+    --about-section-header-fontcolor:#858a96;
+    --about-section-header-span-fontcolor:red;
+}
+.poster 
+{
+    width: 100%;
+}
+.poster img
+{
+    width: 100%;
+    display: block;
+    object-fit: contain;
+}
+.about-section
+{
+    background:var(--about-section-bgcolor);
+    color: var(--about-section-fontcolor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 1.2rem;
+    margin: 0.5rem 0rem;
+}
+
+.about-section h1
+{
+    color: var(--about-section-header-fontcolor);
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+.about-section h1 span
+{
+    color: var(--about-section-header-span-fontcolor);
+}
+.about-section .about-detail
+{
+    font-size: 1.15rem;
+}
+.bottom-slogan
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 1rem;
+}
+.bottom-slogan div 
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-slogan div img 
+{
+    width: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.bottom-slogan div p
+{  
+    padding: 0.5rem 1rem;
+}
